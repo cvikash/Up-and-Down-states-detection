@@ -23,3 +23,6 @@ it tries to fit histograms with gaussian mixture distribution. After this gaussi
 the upper and lower threshold for detecting UP and DOWN states. With this threshold it calculates the periods for UP and DOWN states. Then corrects for the
 boundaries and discards those which are lesser than a pre defined period for a state (UP or DOWN). Then it plots these UP and DOWN states on the figure 1 which 
 was on hold. 
+
+In the second part of the script, it operates on LFP. It starts with passing the frequency below 500 Hz or 200 Hz, to remove the MUA activity. Then it decimates/downsamples the
+LFP to 1 KHz. Next, in figure 3, it plots the LFP and then plots the UP and DOWN states obtained in the previous step from intracelluar recordings. In this figure, you can
