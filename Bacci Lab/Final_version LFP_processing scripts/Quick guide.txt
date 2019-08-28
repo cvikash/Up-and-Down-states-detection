@@ -1,0 +1,34 @@
+                                        A quick user guide for Up and Down scripts
+
+
+
+1. In the beginning of the data analysis, the user must have a few whole-cell intracellular recordings (LFP on another channel).
+   First, user should run the script 'vikash_intra_up_down.m'. Upon running this script, user will be asked to provide a .abf 
+   file containing whole-cell intracellular recording on channel. After processing the provided data, this script will save
+   some figures and original_.abf_filename_theta_X.txt file. In this text file, user can obtain theta values corresponding to
+   the low frequency bands (variable name 'fbands') provided in beginning of this script. It is recommended that user do this 
+   for some significant number of recordings, not just for 1 or 2. Based on the last two figures, histogram plot of phase of LFP 
+   during Up and Down states and Lx(t) function, user can decide which bands provide phase preference for Up and Down state and
+   for which Lx(t) fits well in a sine wave. 
+
+
+
+2. After deciding which bands to use for state detection, user can go the script 'Spike_detect_In_vivo_UP_DOWN_States' and assign
+   the variable 'bands' in line 147 to the ones that you have chosen from step 1 and variable 'theta' in line 148 to theta values
+   of bands obtained from step 1 in the same order as the bands. Now the user is set to run the script 'Spike_detect_In_vivo_UP_DOWN_States'.
+   Input arguments of this script are a *.abf file containing juxt recording on one channel and LFP recording on another, bandwidth
+   you have chosen, minimum interval between states and minimum duration of a state. For a good detection, user can tweak these
+   parameters based on qualitative analysis of LFP recording. Output of this script are several useful figures and info about periods
+   of Up and Down states. 
+
+
+   For more information, you can read the internship report in this folder. 
+
+
+   To download scripts for this analysis and know details about each script, you may see this github link:
+   https://github.com/cvikash/Up-and-Down-states-detection/tree/master/Bacci%20Lab
+
+
+
+
+   
