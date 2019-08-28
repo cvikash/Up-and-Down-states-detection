@@ -1,6 +1,6 @@
 # Up-and-Down-states-detection
 
-* Scripts to detect Up and Down states during SWS
+* Scripts to detect Up and Down states induced by anesthesia (Ketamine/Xylazine)
 
 Mukovski:          https://academic.oup.com/cercor/article/17/2/400/31809
 
